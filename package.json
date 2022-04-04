@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "serve": "webpack serve --mode=development",
-    "deploy": "npm run deploy"
+    "deploy": "sh deploy.sh"
   },
   "keywords": [],
   "author": "",
