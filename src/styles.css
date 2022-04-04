@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+:root {
+    --blue: #0166FF;
+    --pink: #E04D7E;
+    --gray: #F3F4F7;
+    --dark-gray: #858585;
+}
+
+#root {
+    height: 100vh;
+    position: relative;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.error-message {
+    color: var(--pink);
+    font-size: 40px;
+    position: absolute;
+    font-weight: 300;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content-title {
+    font-weight: 500;
+}
+
+.emphasize {
+    color: var(--blue);
+}
+
+.courses-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.courses-list li {
+    border-top: 1px solid var(--dark-gray);
+}
+
+.courses-list li:last-of-type {
+    border-bottom: 1px solid var(--dark-gray);
+}
+
+.courses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-count {
+    color: var(--dark-gray);
+}
+
+.course-placeholder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--gray);
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: var(--pink);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

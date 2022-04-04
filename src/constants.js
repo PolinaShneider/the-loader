@@ -1,0 +1,1 @@
+export const NETOLOGY_URL = 'https://netology.ru';
